@@ -1,0 +1,26 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if(x >= 0){
+            y = 0; //this will hold the reversed num
+            rem; //this will hold the remainder while reversing the orginal int
+        
+            while(x != 0){
+                rem = x%10;
+                y = y*10 + rem;
+                x /= 10;
+            }
+        
+            if (x == y){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return false;
+        }
+        
+    }
+};
